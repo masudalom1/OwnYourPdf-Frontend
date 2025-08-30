@@ -11,7 +11,6 @@ import WordToPdf from "./pages/WordToPdf";
 import PdfRemove from "./pages/PdfRemove";
 import CodePreviewer from "./pages/CodePreviewer";
 
-
 function App() {
   return (
     <>
@@ -21,13 +20,13 @@ function App() {
         <Route path="/merge" element={<MergePdf />} />
         <Route path="/split" element={<Split />} />
         <Route path="/compress" element={<CompressPDF />} />
-         <Route path="convert/pdf-to-word" element={<PdfToWord/>} />
-          <Route path="convert/pdf-to-jpg" element={<PdfToJpg/>} />
-          <Route path="convert/pdf-to-ppt" element={<PdfToJpg/>} />
-          <Route path="convert/word-to-pdf" element={<WordToPdf/>} />
-           <Route path="/remove-pdf" element={<PdfRemove/>} />
-         
-           <Route path="/CodePreviewer" element={<CodePreviewer/>} />
+        <Route path="convert/pdf-to-word" element={<PdfToWord />} />
+        <Route path="convert/pdf-to-jpg" element={<PdfToJpg />} />
+        <Route path="convert/pdf-to-ppt" element={<PdfToJpg />} />
+        <Route path="convert/word-to-pdf" element={<WordToPdf />} />
+        <Route path="/remove-pdf" element={<PdfRemove />} />
+
+        <Route path="/CodePreviewer" element={<CodePreviewer />} />
       </Routes>
     </>
   );
