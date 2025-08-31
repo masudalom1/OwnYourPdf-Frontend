@@ -3,6 +3,7 @@ import { FaFilePdf, FaLock, FaRobot, FaTools } from "react-icons/fa";
 import { MdEditDocument, MdOutlinePictureAsPdf } from "react-icons/md";
 import { AiOutlineCompress } from "react-icons/ai";
 import { RiPagesFill } from "react-icons/ri";
+import {Link} from "react-router-dom"
 
 const Content = () => {
   const sections = [
@@ -166,6 +167,9 @@ const Content = () => {
           <div>
             <h4 className="text-lg font-semibold text-white mb-3">Resources</h4>
             <ul className="space-y-2 text-sm">
+              <Link to="/about">About</Link>
+              <br />
+              <Link to="/privacy-policy">Privacy</Link>
               <li>Blog</li>
               <li>Guides</li>
               <li>SEO Tips</li>
@@ -178,8 +182,8 @@ const Content = () => {
           <div>
             <h4 className="text-lg font-semibold text-white mb-3">Contact</h4>
             <ul className="space-y-2 text-sm">
-              <li>Email: support@ownyourpdf.com</li>
-              <li>Phone: +91 98765 43210</li>
+              <li>Email: solvixan.office@gmail.com</li>
+              <Link to="/contact">contact info</Link>
               <li>Location: India</li>
             </ul>
           </div>

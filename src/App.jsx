@@ -10,6 +10,9 @@ import PdfToJpg from "./pages/PdfToJpg";
 import WordToPdf from "./pages/WordToPdf";
 import PdfRemove from "./pages/PdfRemove";
 import CodePreviewer from "./pages/CodePreviewer";
+import PrivacyPolicy from "./aboutsite/PrivacyPolicy";
+import About from "./aboutsite/About";
+import Contact from "./aboutsite/Contact";
 
 function App() {
   return (
@@ -25,8 +28,10 @@ function App() {
         <Route path="convert/pdf-to-ppt" element={<PdfToJpg />} />
         <Route path="convert/word-to-pdf" element={<WordToPdf />} />
         <Route path="/remove-pdf" element={<PdfRemove />} />
-
         <Route path="/CodePreviewer" element={<CodePreviewer />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/contact" element={<Contact/>} />
       </Routes>
     </>
   );
