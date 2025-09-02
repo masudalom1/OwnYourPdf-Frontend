@@ -42,10 +42,11 @@ export default function Navbar() {
       ? "text-indigo-600 font-semibold uppercase text-sm"
       : "text-gray-800 hover:text-indigo-600 uppercase text-sm transition";
 
-  return (
-    <header className="bg-white border-b shadow-sm">
+   return (
+    <header className="sticky top-0 z-50 bg-white border-b shadow-sm">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
+
           {/* Left: Logo */}
           <Link to="/" className="flex items-center gap-2">
             <svg
